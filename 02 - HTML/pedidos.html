@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria RusEat | Alta repostería</title>
+</head>
+<body><a href="/index.html">
+    <img src="./assets/img/logo-01.png" alt="RusEat - alta repostería" width="120"></a>
+<br>
+<br>
+<h1>RusEat - alta repostería</h1>
+    <a href="/pedidos.html"><h2>Realiza tu pedido</h2></a>
+    <img src="./assets/img/banner1.jpg" alt="logo-backer" width="100%" height="100%"/>
+
+    <!--precios -->
+    <table>
+        <tr>
+         <th>Precios Vigentes</th>
+        </tr>
+       <tr><td>10 personsas <b>$200</b></td></tr>
+       <tr><td>30 personsas <b>$300</b></td></tr>
+       <tr><td>50 personsas <b>$500</b></td></tr>
+       <tr><td>75 personsas <b>$750</b></td></tr>
+       <tr><td>100 personsas <b>$850</b></td></tr>
+       <tr><td>150 personsas <b>$1,200</b></td></tr>
+       <tr><td>200 personsas <b>$1,700</b></td></tr>
+    </table>
+   <!-- Arma tu pastel-->
+<form  id="form1" method="post">
+    <h2>Arma tu RusEat Ideal</h2>
+    <h3>¿cuántos invitados?</h3>
+    <label for="tamaño">Selecciona tamaño</label>
+    <select id="sabores" name="sabores">
+        <option value="10 personas">10 personas</option>
+        <option value="30 personas">30 personas</option>
+        <option value="50 personas">50 personas</option>
+        <option value="75 personas">75 personas</option>
+        <option value="100 personas">100 personas</option>
+        <option value="150 personas">150 personas</option>
+        <option value="200 personas">200 personas</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h3>¿Cuál es tu sabor favorito?</h3>
+    <input type="radio" id="Chocolate" name="sabor" value="Chocolate">
+    <label for="Chocolate">Chocolate</label><br>
+    <input type="radio" id="moka" name="sabor" value="Moka">
+    <label for="Moka">Moka</label><br>
+    <input type="radio" id="Cajeta" name="sabor" value="Cajeta">
+    <label for="Cajeta">Cajeta</label>
+    <br>
+    <br>
+    <br>
+    <h3>¿Cómo quieres tu pastel?</h3>
+    <label for="cobertura">Selecciona tipo de cobertura</label>
+    <select id="sabores" name="sabores">
+        <option value="Sin Cobertura">Sin Cobertura</option>
+        <option value="Queso con Zarzamora">Queso con Zarzamora</option>
+        <option value="Queso con Fresa">Queso con Fresa</option>
+        <option value="Queso con Chocolate">Queso con Chocolate</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h3>Selecciona la decoración</h3>
+    <p>Todos nuestros pasteles son decorados con chantilli, adicionalmente puedes seleccionar
+        <br>alguna fruta de tu preferencia.
+    </p>
+    <label for="decoracion-frutal">Selecciona la decoración</label>
+    <select id="decoracion-frutal" name="decoracion-frutal">
+        <option value="Ninguno<">Ninguno</option>
+        <option value="Fresas">Fresas</option>
+        <option value="Durazno">Durazno</option>
+        <option value="Chocolate con vainilla">Chocolate con vainilla</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h3>¿Quieres agregar un mensaje?</h3>
+    <label for="frase-liston">Agregaremos un listón con una frase corta si así lo deseas</label>
+    <br>
+    <br>
+    <textarea type="frase-liston" id="frase-liston" name="frase-liston" maxlength="100"></textarea>
+    <br>
+    <br>
+    <br>
+    <h3>Selecciona una fecha para la entrega del pedido</h3>
+    <p>Ten en cuenta que debes realizar tu pedido con dos días de anticipación. </p>
+    <input type="datetime-local" id="Fecha" name="fecha">
+    <br>
+    <br>
+    <br>
+<hr>
+    <h2>¿Quien hace el pedido?</h2>
+    <label for="text1">Nombre Completo</label><br>
+    <input type="text" id="text1" name="text1">
+    <br>
+    <br>
+    <label for="correo">Dirección de Correo</label><br>
+    <input type="email" id="correo" name="correo">
+    <br>
+    <br>
+
+    <label for="telefono">Teléfono</label><br>
+    <input type="tel" id="telefono" name="telefono" maxlength="10"><br><br>
+    
+    <label for="entrega">Detalles de Entrega</label><br>
+    <textarea type="text" id="entrega" name="entrega" maxlength="100"></textarea>
+    <hr>
+    <input type="submit" value="Enviar">
+    <input type="reset">
+
+
+
+</form>
+</body>
+</html>
